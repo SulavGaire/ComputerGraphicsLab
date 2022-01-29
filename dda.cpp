@@ -37,6 +37,7 @@ void DDA(float x1, float y1, float x2, float y2)
 int main()
 {
     initwindow(600, 600, "DDA");
+    //question points
     DDA(100, 100, 200, 250);
     DDA(300, 100, 100, 250);
     DDA(300, 400, 100, 250);
