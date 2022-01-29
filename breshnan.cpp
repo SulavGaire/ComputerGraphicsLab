@@ -57,6 +57,7 @@ void bresenham(float x1, float y1, float x2, float y2)
 int main()
 {
     initwindow(600,600,"Bresenhams Line Drawing Algorithm");
+    //inputs
     bresenham(150, 100, 250, 250);
     bresenham(300, 150, 150, 250);
     bresenham(300, 200, 100, 50);
