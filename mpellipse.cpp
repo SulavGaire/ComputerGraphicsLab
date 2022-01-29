@@ -63,6 +63,7 @@ void midPointEllipse(int x_radius, int y_radius, int x_c, int y_c)
 int main()
 {
     initwindow(600, 600, "MidPointEllipse");
+    //inputs
     midPointEllipse(100, 75, 200, 125);
     midPointEllipse(160, 250, 300, 300);
     getch();
