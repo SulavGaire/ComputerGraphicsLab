@@ -43,7 +43,7 @@ int main()
     initwindow(600,600, "Rotation");
     int x1 = 100, y1 = 100, x2 = 100, y2 = 200, x3 = 200, y3 = 200;
     plot(x1, y1, x2, y2, x3, y3);
-    RotateAboutCentroid(x1, y1, x2, y2, x3, y3, 60);
+    RotateAboutCentroid(x1, y1, x2, y2, x3, y3, 60);   //60 here is angle of rotation
     getch();
     closegraph();
 }
