@@ -3,7 +3,7 @@ Just easier to copy code for assignment.
 
 Yes, we still use graphics.h like a total fucking retard...
 
-#Setting up graphics.h in VS Code(C++)
+# Setting up graphics.h in VS Code(C++)
 
 1. Download graphics header file. (https://drive.google.com/file/d/16xZBvFXf7yFjxwTpuyevK1KPuLgUeZFh/view)
 2. Download and install tdm-gcc 32bit compiler.
