@@ -41,14 +41,14 @@ void RotateAboutCentroid(int x1, int y1, int x2, int y2, int x3, int y3, int ang
 
 void RotateAboutCenter(int x1, int y1, int x2, int y2, int x3, int y3, int angle)
 {
-    x1 = (x1 * cos(angle)) - (y1 * sin(angle));
-    y1 = (x1 * sin(angle)) + (y1 * cos(angle));
+    x1 = abs((x1 * cos(angle)) - (y1 * sin(angle)));
+    y1 = abs((x1 * sin(angle)) + (y1 * cos(angle)));
 
-    x2 = (x2 * cos(angle)) - (y2 * sin(angle));
-    y2 = (x2 * sin(angle)) + (y2 * cos(angle));
+    x2 = abs((x2 * cos(angle)) - (y2 * sin(angle)));
+    y2 = abs((x2 * sin(angle)) + (y2 * cos(angle)));
 
-    x3 = (x3 * cos(angle)) - (y3 * sin(angle));
-    y3 = (x3 * sin(angle)) + (y3 * cos(angle));
+    x3 = abs((x3 * cos(angle)) - (y3 * sin(angle)));
+    y3 = abs((x3 * sin(angle)) + (y3 * cos(angle)));
 
    plot(x1, y1, x2, y2, x3, y3);
 }
