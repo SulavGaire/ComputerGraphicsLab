@@ -17,5 +17,6 @@ Yes, we still use graphics.h like a total fucking retard...
 -loleaut32 
 -lole32
 7. Set C++ standard to c++11
-8. Write some codes and build the code with followin cofig: ![image](https://user-images.githubusercontent.com/55276059/152299456-2e5d2717-3530-4102-a84a-380ccaf49fe3.png)
-9. Then you are good to go.
+8. Write some codes and build the code with followin cofig: 
+![image](https://user-images.githubusercontent.com/55276059/152299456-2e5d2717-3530-4102-a84a-380ccaf49fe3.png)
+10. Then you are good to go.
