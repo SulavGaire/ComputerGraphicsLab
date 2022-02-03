@@ -102,7 +102,7 @@ void shear(int x1, int y1, int x2, int y2, int x3, int y3, int shx, int shy)
 
 int main()
 {
-    initwindow(600,600, "Rotation");
+    initwindow(600,600, "AllinOne");
     int x1 = 100, y1 = 100, x2 = 100, y2 = 200, x3 = 200, y3 = 200;
     plot(x1, y1, x2, y2, x3, y3);
     std::cout << "Enter the option\n"
