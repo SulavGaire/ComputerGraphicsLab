@@ -1,3 +1,9 @@
+/* 
+    This is the very poor way of programming in C++,
+    I do not recommend anyone to code like this,
+    But for the assignment purpose I choosed the simpler way,
+*/
+
 #include <iostream>
 #include <graphics.h>
 #include <cmath>
