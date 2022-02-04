@@ -10,8 +10,8 @@ int main()
 
     do{
         std::cout << "Enter the option(0 to quit)\n"
-        "1. Rot about centroid\n"
-        "2. Rot about center\n"
+        "1. Rotation about centroid\n"
+        "2. Rotation about center\n"
         "3. Scaling\n"
         "4. Translation\n" 
         "5. Shear"<< std::endl;
