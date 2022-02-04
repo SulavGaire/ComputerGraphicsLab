@@ -9,7 +9,7 @@ int main()
     all->plot();
 
     do{
-        std::cout << "Enter the option\n"
+        std::cout << "Enter the option(0 to quit)\n"
         "1. Rot about centroid\n"
         "2. Rot about center\n"
         "3. Scaling\n"
