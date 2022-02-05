@@ -25,7 +25,7 @@ Yes, we still use graphics.h like a total fucking retard...
 
 # Setting up graphics.h in Sublime Text 3(C++)
 
-1. Download the above BGI file.
+1. Download the above BGI file from thefunkydude/ComputerGraphicsLab.
 2. Copy the file to path c:/dev.
 3. Make sure that mingw is added to the environment variables.
 4. Open your sublime text and follow the setps: tools->Build system->New build system.
