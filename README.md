@@ -57,20 +57,18 @@ Yes, we still use graphics.h like a total fucking retard...
 
 # Setting up Opengl (freeglut) in sublime text3 (c++)
 - Build code for now:
-      ```
+```
       {
         "shell_cmd": "g++ -std=c++17 \"${file}\" ‐IC:\\freeglut\\include ‐LC:\\freeglut\\lib ‐w ‐Wl,‐subsystem,windows ‐lOpenGL32 ‐lglu32 ‐lfreeGLUT -o \"${file_base_name}\"             && start cmd /c \"title ${file_base_name}.exe && \"${file_path}/${file_base_name}\" && echo. && echo. && pause\"",
         "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
         "working_dir": "${file_path}",
         "selector": "source.c++",
       }
-      ```
+```
       
       
-- A test code drawing a triangle taken from [ref](https://cs.lmu.edu/~ray/notes/openglexamples/):
-
-
-      ```
+- A test code drawing a triangle taken from [This site](https://cs.lmu.edu/~ray/notes/openglexamples/).
+```
       #include<Gl/glut.h>
 
       void display() {
@@ -100,7 +98,7 @@ Yes, we still use graphics.h like a total fucking retard...
         glutDisplayFunc(display);
         glutMainLoop();
       }
-      ```
+```
 
 
 
