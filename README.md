@@ -10,8 +10,7 @@ Yes, we still use graphics.h like a total fucking retard...
 3. Copy files from include and lib folder from graphics folder file you downloaded in step 1 to include and lib folder of tdm-gcc 32bit.
 4. Open VS Code and create a new project folder and open C/C++ configuration.
 5. In the configuration setting set compiler path to C:/TDM-GCC-32/bin/g++.exe (this location may be different).
-6. Paste following to compiler arguments 
-
+6. Paste following to compiler arguments. 
 -lbgi 
 -lgdi32 
 -lcomdlg32 
