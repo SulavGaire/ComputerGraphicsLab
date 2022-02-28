@@ -140,7 +140,7 @@ int main()
     }
     else if(option == 5)
     {
-        std::cout << "Enter traslation factors(shx, shy): ";
+        std::cout << "Enter shear factors(shx, shy): ";
         std::cin >> shx >> shy;
         shear(x1, y1, x2, y2, x3, y3, shx, shy);
     }
