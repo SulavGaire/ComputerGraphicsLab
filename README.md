@@ -1,7 +1,7 @@
 
 # Setting up graphics.h in VS Code(C++)
 
-1. Download graphics header file from [here](https://drive.google.com/file/d/16xZBvFXf7yFjxwTpuyevK1KPuLgUeZFh/view)
+1. Download graphics header file from [here.](https://drive.google.com/file/d/16xZBvFXf7yFjxwTpuyevK1KPuLgUeZFh/view)
 2. Download and install tdm-gcc 32bit compiler.
 3. Copy files from include and lib folder from graphics folder file you downloaded in step 1 to include and lib folder of tdm-gcc 32bit.
 4. Open VS Code and create a new project folder and open C/C++ configuration.
@@ -100,7 +100,7 @@
 
 # Setting up OpenGL(freeglut) in Visual Studio
 
-1. Download free glew and glut from [here](http://www.mediafire.com/file/cmlnr0pj0pyha5d/Glew_and_Glut.zip/file)
+1. Download free glew and glut from [here.](http://www.mediafire.com/file/cmlnr0pj0pyha5d/Glew_and_Glut.zip/file)
 2. Extract the files in a folder you desire.(you need the folder so never delete it unless you donot want to do opengl anymore)
 3. Open Visual Studio and create a C++ solution/project.
 4. Go to the properties of your project.
