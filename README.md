@@ -98,7 +98,7 @@
 ```
 
 
-#Setting up OpenGL(freeglut) in Visual Studio
+# Setting up OpenGL(freeglut) in Visual Studio
 
 1. Download free glew and glut from [here](http://www.mediafire.com/file/cmlnr0pj0pyha5d/Glew_and_Glut.zip/file)
 2. Extract the files in a folder you desire.(you need the folder so never delete it unless you donot want to do opengl anymore)
