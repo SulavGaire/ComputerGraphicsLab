@@ -1,7 +1,7 @@
 
 # Setting up graphics.h in VS Code(C++)
 
-1. Download graphics header file. (https://drive.google.com/file/d/16xZBvFXf7yFjxwTpuyevK1KPuLgUeZFh/view)
+1. Download graphics header file from [here](https://drive.google.com/file/d/16xZBvFXf7yFjxwTpuyevK1KPuLgUeZFh/view)
 2. Download and install tdm-gcc 32bit compiler.
 3. Copy files from include and lib folder from graphics folder file you downloaded in step 1 to include and lib folder of tdm-gcc 32bit.
 4. Open VS Code and create a new project folder and open C/C++ configuration.
@@ -65,6 +65,57 @@
       
       
 - A test code drawing a triangle taken from [This site](https://cs.lmu.edu/~ray/notes/openglexamples/).
+```
+      #include<Gl/glut.h>
+
+      void display() {
+
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        glBegin(GL_POLYGON);
+          glVertex3f(-0.6, -0.75, 0.5);
+          glVertex3f(0.6, -0.75, 0);
+          glVertex3f(0, 0.75, 0);
+
+        glEnd();
+
+        glFlush();
+      }
+
+      int main(int argc, char** argv) {
+
+        glutInit(&argc, argv);
+        glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+
+
+        glutInitWindowPosition(80, 80);
+        glutInitWindowSize(400, 300);
+        glutCreateWindow("A Simple Triangle");
+
+        glutDisplayFunc(display);
+        glutMainLoop();
+      }
+```
+
+
+#Setting up OpenGL(freeglut) in Visual Studio
+
+1. Download free glew and glut from [here](http://www.mediafire.com/file/cmlnr0pj0pyha5d/Glew_and_Glut.zip/file)
+2. Extract the files in a folder you desire.(you need the folder so never delete it unless you donot want to do opengl anymore)
+3. Open Visual Studio and create a C++ solution/project.
+4. Go to the properties of your project.
+ ![image](https://user-images.githubusercontent.com/55276059/156544423-93256c2f-c779-41cb-a2e7-0793a4879032.png)
+5. Inside properties go to C/C++ and in additional include directories include the include folders from the files you dowloaded before.
+![image](https://user-images.githubusercontent.com/55276059/156544972-aa1594c0-e7db-455a-a654-04335f869573.png)
+6. Go to general of linker section and in additional library directories include the lib folders from the files you downloaded before.
+![image](https://user-images.githubusercontent.com/55276059/156545285-c22c1b0b-a163-4b36-857e-bafcabc938ff.png)
+7. In the input of linker section add following in additional dependencies. 
+   -freeglut.lib
+   -glew32.lib
+   ![image](https://user-images.githubusercontent.com/55276059/156545541-ef37ab0a-5807-47d0-ba1b-a9041cf4d20e.png)
+8. Copy and paste following files you downloaded before in System32 folder.
+![image](https://user-images.githubusercontent.com/55276059/156545796-6eed6463-563d-486c-9da9-97553c3a387c.png)
+9. Now copy the code and build your project and run it, then you are good to go.
 ```
       #include<Gl/glut.h>
 
