@@ -104,7 +104,6 @@
 2. Extract the files in a folder you desire.(you need the folder so never delete it unless you donot want to do opengl anymore)
 3. Open Visual Studio and create a C++ solution/project.
 4. Go to the properties of your project.
- ![image](https://user-images.githubusercontent.com/55276059/156544423-93256c2f-c779-41cb-a2e7-0793a4879032.png)
 5. Inside properties go to C/C++ and in additional include directories include the include folders from the files you dowloaded before.
 ![image](https://user-images.githubusercontent.com/55276059/156544972-aa1594c0-e7db-455a-a654-04335f869573.png)
 6. Go to general of linker section and in additional library directories include the lib folders from the files you downloaded before.
@@ -114,7 +113,8 @@
    -glew32.lib
    ![image](https://user-images.githubusercontent.com/55276059/156545541-ef37ab0a-5807-47d0-ba1b-a9041cf4d20e.png)
 8. Copy and paste following files you downloaded before in System32 folder.
-![image](https://user-images.githubusercontent.com/55276059/156545796-6eed6463-563d-486c-9da9-97553c3a387c.png)
+   -freeglut.dll
+   -glew32.dll
 9. Now copy the code and build your project and run it, then you are good to go.
 ```
       #include<Gl/glut.h>
