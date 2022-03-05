@@ -1,46 +1,49 @@
-#include <iostream>
+// LAB task #1 DDA line drawing algorithm
 #include <graphics.h>
+#include <iostream>
 #include <cmath>
-//#define Round(a) (a + 0.5)         Roundoff function can be represented as this also
 
-inline int Round(float a)
+using namespace std;
+
+
+void ddalinedraw(int x1,int y1,int x2,int y2)
 {
-    return static_cast<int>(a);
+
+
+  int dx=x2-x1,dy=y2-y1,step;
+  float xincr,yincr,x=x1,y=y1;
+
+  if(abs(dx)>abs(dy))
+    step = abs(dx);
+  else 
+    step = abs(dy);
+
+  xincr = dx/(float)step;
+  yincr = dy/(float)step;
+  putpixel(round(x),round(y),WHITE);
+
+  int i=1;
+  while(i<=step){
+    x=x+xincr;
+    y=y+yincr;
+    i++;
+    delay(10);
+    putpixel(round(x),round(y),WHITE);
+  }
+
 }
 
-void DDA(float x1, float y1, float x2, float y2)
-{
-    float  x, y, dx, dy, step, xincr, yincr;
-    dx = x1-x2;
-    dy = y1-y2;
 
-    if(abs(dx) > abs(dy))
-        step = abs(dx);
-    else    
-        step = abs(dy);
 
-    xincr = dx/static_cast<float>(dx);
-    yincr = dy/static_cast<float>(dy);
-    putpixel(Round(x), Round(y), WHITE);
-
-    int i = 1;
-    while(i <= step)
-    {
-        x += xincr;
-        y += yincr;
-        i++;
-        delay(10);
-        putpixel(Round(x), Round(y), WHITE);
-    }
-}
 
 int main()
 {
-    initwindow(600, 600, "DDA");
-    //question points
-    DDA(100, 100, 200, 250);
-    DDA(300, 100, 100, 250);
-    DDA(300, 400, 100, 250);
-    getch();
-    closegraph();
+  initwindow(500,500,"DDA Line Drawing Algorithm");
+  ddalinedraw(100,100,200,250);
+  ddalinedraw(300,100,100,250);
+  ddalinedraw(300,400,100,250);
+  getch();
+  closegraph();
+  return 0;
 }
+
