@@ -98,7 +98,22 @@ void shear(int x1, int y1, int x2, int y2, int x3, int y3, int shx, int shy)
     y3 = shy * x3 + y3;
 
     plot(x1, y1, x2, y2, x3, y3);
-}         
+}  
+
+void ScaleAboutCentroid(int x1, int y1, int x2, int y2, int x3, int y3, int sx, int sy)
+{
+    int xc = (x1 + x2 + x3) / 3;
+    int yc = (y1 + y2 + y3) / 3;
+    
+    x1 = x1 * sx + xc * (1 - sx);
+    x2 = x2 * sx + xc * (1 - sx);
+    x3 = x3 * sx + xc * (1 - sx);
+    y1 = y1 * sy + yc * (1 - sy);
+    y2 = y2 * sy + yc * (1 - sy);
+    y3 = y3 * sy + yc * (1 - sy);
+
+    plot(x1, y1, x2, y2, x3, y3);
+}
 
 int main()
 {
@@ -110,7 +125,8 @@ int main()
     "2. Rot about center\n"
     "3. Scaling\n"
     "4. Translation\n" 
-    "5. Shear"<< std::endl;
+    "5. Shear\n"
+    "6. Scale About Centroid"<< std::endl;
 
     int option, angle, sx, sy, tx, ty, shx, shy;
     std::cin >> option;
@@ -143,6 +159,12 @@ int main()
         std::cout << "Enter shear factors(shx, shy): ";
         std::cin >> shx >> shy;
         shear(x1, y1, x2, y2, x3, y3, shx, shy);
+    }
+    else if(option == 6)
+    {
+        std::cout << "Enter scale factors(sx, sy): ";
+        std::cin >> sx >> sy;
+        ScaleAboutCentroid(x1, y1, x2, y2, x3, y3, sx, sy);
     }
 
     else
