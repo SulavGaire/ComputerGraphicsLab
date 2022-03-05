@@ -71,14 +71,14 @@ void Draw() {
 	glutSwapBuffers();
 }
 
-int main(int C, char* V[])
+int main(int argc, char** argv)
 {
-	glutInit(&C, V);
+	glutInit(&argc, argv);
 
 	glutInitWindowPosition(250, 50);
 	glutInitWindowSize(600, 600);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
-	glutCreateWindow("SULAV");
+	glutCreateWindow("PARAS");
 	MyInit();
 	glutDisplayFunc(Draw);
 	//glutIdleFunc(Spin); //spinning
