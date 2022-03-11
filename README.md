@@ -109,8 +109,8 @@
 6. Go to general of linker section and in additional library directories include the lib folders from the files you downloaded before.
 ![image](https://user-images.githubusercontent.com/55276059/156545285-c22c1b0b-a163-4b36-857e-bafcabc938ff.png)
 7. In the input of linker section add following in additional dependencies. 
-   -freeglut.lib
-   -glew32.lib
+   (freeglut.lib
+   , glew32.lib)
    ![image](https://user-images.githubusercontent.com/55276059/156545541-ef37ab0a-5807-47d0-ba1b-a9041cf4d20e.png)
 8. Copy and paste following files you downloaded before in System32 folder.
    -freeglut.dll
