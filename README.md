@@ -113,8 +113,8 @@
    , glew32.lib)
    ![image](https://user-images.githubusercontent.com/55276059/156545541-ef37ab0a-5807-47d0-ba1b-a9041cf4d20e.png)
 8. Copy and paste following files you downloaded before in System32 folder.
-   -freeglut.dll
-   -glew32.dll
+   (freeglut.dll
+   , glew32.dll)
 9. Now copy the code and build your project and run it, then you are good to go.
 ```
       #include<Gl/glut.h>
